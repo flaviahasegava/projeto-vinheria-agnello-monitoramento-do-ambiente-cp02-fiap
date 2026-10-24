@@ -2,7 +2,7 @@
 - A Adega Agnello é um projeto desenvolvido para monitorar as condições ambientais de uma adega, acompanhando três fatores importantes: temperatura, umidade do ar e luminosidade.
 - A ideia é utilizar um Arduino para coletar os dados dos sensores, mostrar as informações em uma tela LCD e emitir alertas quando alguma condição estiver fora dos limites definidos.
 - Além do monitoramento, o sistema permite personalizar algumas configurações e guardar um histórico de situações críticas.
-
+  
 # 🚥 Como funciona?
 O sistema realiza leituras dos sensores aproximadamente a cada segundo e calcula a média dos valores em intervalos de cinco segundos, ajudando a reduzir pequenas oscilações nas medições. Com base nos resultados, o Arduino identifica o estado do ambiente:
 - **🟢 Verde:** condições dentro dos limites definidos.
@@ -48,14 +48,14 @@ Para desenvolver o projeto Adega Agnello, foram utilizados os seguintes componen
 - **1x Arduino Uno R3:** responsável por controlar o sistema e processar os dados dos sensores.
 - **1x Sensor DHT22:** utilizado para medir a temperatura e a umidade do ar.
 - **1x Sensor LDR:** responsável por detectar a luminosidade do ambiente.
-- **1 Display LCD 16x2 com módulo I2C:** utilizado para exibir as medições, os alertas e as configurações.
+- **1x Display LCD 16x2 com módulo I2C:** utilizado para exibir as medições, os alertas e as configurações.
 - **1x Módulo RTC DS1307:** responsável por fornecer a data e a hora.
 - **1x LED Verde:** indica que as condições estão dentro dos limites definidos.
 - **1x LED Amarelo:** indica uma situação de atenção.
 - **1x LED Vermelho:** indica uma condição crítica.
 - **1x Buzzer:** emite alertas sonoros quando uma condição está crítica.
 - **1x Botão de pressão:** permite trocar as telas e acessar as configurações do sistema.
-- **Resistores:** utilizados nas ligações elétricas, conforme a necessidade do circuito.
+- **Resistores (220Ω):** utilizados nas ligações elétricas, conforme a necessidade do circuito.
 - **Jumpers (Macho-Macho e Macho-Fêmea):** utilizados para conectar os componentes.
 - **1x Protoboard:** facilita a montagem do circuito.
 - **1x Bateria compatível com o módulo RTC, se necessária:** mantém o relógio funcionando quando a alimentação principal é desligada.
@@ -119,7 +119,7 @@ Para configurar o 115200 baud na Arduino IDE:
 Este é um projeto acadêmico desenvolvido para a vinícola fictícia do caso da Vinheria Agnello, como parte da avaliação (CP02 - Checkpoint 02) da FIAP (Faculdade de Informática e Administração Paulista).
 - **Disciplina:** Edge Computing & Computer Systems
 - **Professor:** Dr. Fábio Henrique Cabrini
-- **Vídeo de demonstração:** 🔗[Assista no YouTube](#)
+- **Vídeo de demonstração:** 🔗[Assista no YouTube](https://youtu.be/xUJtiKg4jtk)
 - **Wowki:** 🔗[Projeto no Wowki](https://wokwi.com/projects/478463667788039169)
 - **Grupo (CTRL + 5):** **Eduardo** Ambra Giordano de Castro, **Flávia** Sirahata Hasegava e **Lirity** Ribeiro de Paiva.
 
